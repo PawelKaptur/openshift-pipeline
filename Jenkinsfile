@@ -1,7 +1,7 @@
 node('maven') {
-  stage('Clean install') {
+  stage('Clean') {
     git url: "https://github.com/PawelKaptur/openshift-pipeline.git"
-    sh "mvn clean install"
+    sh "mvn clean"
   }
   
   stage('Build') {
@@ -11,4 +11,4 @@ node('maven') {
   stage('Test') {
     sh "mvn test"
   }
-  }
+}
