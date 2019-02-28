@@ -2,20 +2,20 @@ pipeline {
     agent any 
 
     stages {
-        stage('Clean') { 
+        stage('Build') { 
             steps { 
-                sh 'mvn clean' 
+                sh 'sleep 5' 
             }
         }
-        stage('Build'){
+        stage('Test'){
             steps {
-                sh 'mvn package'
+                sh 'sleep 5'
                
             }
         }
-        stage('Test') {
+        stage('Deploy') {
             steps {
-                sh 'mvn test'
+                sh 'sleep 5'
             }
         }
     }
