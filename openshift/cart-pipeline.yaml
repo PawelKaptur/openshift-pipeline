@@ -12,7 +12,7 @@ items:
     source:
       git:
         ref: pipeline
-        uri: https://github.com/PawelKaptur/openshift-pipeline
+        uri: https://github.com/PawelKaptur/openshift-pipeline.git
       type: Git
     strategy:
       type: JenkinsPipeline
