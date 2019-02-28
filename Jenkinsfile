@@ -12,9 +12,8 @@ node('maven') {
     sh "mvn install"
   }
   
-  stage('Package') {
+  stage('Build') {
     sh "mvn package"
-    stash name:"jar", includes:"target/cart.jar"
   }
   
   stage('Test') {
