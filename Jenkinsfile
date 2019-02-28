@@ -1,6 +1,6 @@
 node('maven') {
   stage('Clean') {
-    git url: "https://github.com/siamaksade/cart-service.git"
+    git url: "https://github.com/PawelKaptur/openshift-pipeline.git"
     sh "mvn clean"
   }
   
